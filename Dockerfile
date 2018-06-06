@@ -5,7 +5,7 @@ ENV GOROOT="/go"
 ENV PATH=$PATH:$GOROOT/bin
 
 RUN apk update; \
-	apk add curl; \
+	apk add curl git; \
 	apk cache clean; \
 	curl -o /tmp/go.tar.gz https://dl.google.com/go/go1.10.2.linux-amd64.tar.gz; \
     mkdir -p /go; \
