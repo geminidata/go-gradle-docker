@@ -1,4 +1,4 @@
-FROM gradle:4.9.0 
+FROM gradle:4.10.0 
 USER root
 
 ENV GOROOT="/go"
